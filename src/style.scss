@@ -1,0 +1,143 @@
+$--purple-primary: #554DDE;
+$--accent-pink: #F44E77;
+$--neutral-light: #F2F6FF;
+$--lavender-secondary: #6A6D9E;
+$--dark-primary: #16194F;
+$--border-colour: #CAB6F1;
+$--border-colour2 : #CAD6F1;
+
+html {
+  scroll-behavior: smooth;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+body {
+  background: $--neutral-light;
+  color: white;
+  font-size: 1.2rem;
+}
+
+a{
+  color: inherit;
+}
+
+p{
+  color: $--lavender-secondary;
+  line-height: 1.9rem;
+}
+
+.secondary-heading {
+  font-size: 3rem;
+  color: $--purple-primary;
+}
+
+.small-heading {
+  font-size: 2.5rem;
+  color: $--purple-primary;
+  text-align: center;
+
+}
+span{
+  color: $--accent-pink;
+}
+
+.c-para {
+  text-align: center;
+}
+
+//.left_to_right_in_animation {
+//  animation: LeftRightInAnimation .5s ease-in-out;
+//  transition: all .1s ease-in-out;
+//  @keyframes LeftRightInAnimation {
+//    0% {
+//      transform: translateX(-120%);
+//      opacity: 1%;
+//    }
+//    100% {
+//      transform: translateX(0);
+//      opacity: 100%;
+//    }
+//  }
+//}
+//.right_to_left_in_animation{
+//  animation: RightLeftInAnimation .5s ease-in-out;
+//  transition: all .1s ease-in-out;
+//  @keyframes RightLeftInAnimation {
+//    0%{
+//      transform: translateX(120%);
+//      opacity: 1%;
+//    }
+//    100%{
+//      transform: translateX(0);
+//      opacity: 100%;
+//    }
+//  }
+//}
+//
+//.left_to_right_out_animation {
+//  animation: LeftRightOutAnimation .5s forwards;
+//  transition: all .1s ease-in-out;
+//  @keyframes LeftRightOutAnimation {
+//    0% {
+//      transform: translateX(0);
+//      opacity: 100%;
+//    }
+//    100% {
+//      transform: translateX(-120%);
+//      opacity: 1%;
+//    }
+//  }
+//}
+//
+//.right_to_left_out_animation{
+//  animation: RightLeftOutAnimation .5s forwards;
+//  transition: all .1s ease-in-out;
+//  @keyframes RightLeftOutAnimation {
+//    0%{
+//      transform: translateX(0);
+//      opacity: 100%;
+//    }
+//    100%{
+//      transform: translateX(120%);
+//      opacity: 1%;
+//    }
+//  }
+//}
+
+
+@media screen and (max-width: 1280px) {
+  .secondary-heading {
+    font-size: 2rem;
+  }
+  .small-heading {
+    font-size: 1.8rem;
+  }
+  body{
+    font-size: 1rem;
+  }
+  p {
+    line-height: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .secondary-heading {
+    font-size: 1.6rem;
+  }
+  body{
+    font-size: .8rem;
+  }
+  .small-heading {
+    font-size: 1.5rem;
+  }
+  p {
+    line-height: 1.3rem;
+  }
+}
